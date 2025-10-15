@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "name": "Interlinked",
+    "date": "1 Oct - 31 Oct 2025",
+    "location": "Think & Tink",
+    "organiser": "Think & Tink",
+    "price": "FREE",
+    "category": ["Culture, Arts & Heritage", "Business & Education"],
+    "description": "A month-long program exploring material transformation and relational art through exhibitions, talks, and performances in collaboration with UNIMAS and international partners."
+  },
+  {
+    "id": 2,
+    "name": "Songket Weaving Workshop and Crafts Gallery",
+    "date": "1 Oct - 31 Oct 2025",
+    "location": "Tanoti House",
+    "organiser": "Tanoti Sdn Bhd",
+    "price": "FREE",
+    "category": ["Culture, Arts & Heritage"],
+    "description": "A studio and gallery dedicated to preserving Sarawak’s songket weaving heritage with live demonstrations and handmade textiles."
+  },
+  {
+    "id": 3,
+    "name": "Project Craft Connections: Sarawak Indigenous Craft Anthology",
+    "date": "1 Oct - 31 Oct 2025",
+    "location": "Tanoti House",
+    "organiser": "Tanoti Sdn Bhd",
+    "price": "FREE",
+    "category": ["Culture, Arts & Heritage"],
+    "description": "A collection showcasing indigenous Sarawak crafts that connect tradition, culture, and sustainability."
+  },
+  {
+    "id": 4,
+    "name": "WAK Food Adventure Trail 2.0",
+    "date": "1 Oct - 31 Oct 2025",
+    "location": "Various eateries across Kuching",
+    "organiser": "WAK Festival",
+    "price": "Variable (by location)",
+    "category": ["Food & Markets", "Festivals & Entertainment"],
+    "description": "A culinary exploration of Kuching’s food scene featuring signature local dishes and hidden gems."
+  },
+  {
+    "id": 5,
+    "name": "WAK Stinky Toe Trail",
+    "date": "1 Oct - 31 Oct 2025",
+    "location": "Kuching City",
+    "organiser": "WAK Festival",
+    "price": "FREE",
+    "category": ["Culture, Arts & Heritage", "Festivals & Entertainment"],
+    "description": "An interactive trail celebrating Kuching’s art, culture, and street heritage."
+  },
+  {
+    "id": 6,
+    "name": "All About Arts",
+    "date": "1 Oct - 31 Oct 2025",
+    "location": "Various art venues",
+    "organiser": "WAK Festival",
+    "price": "FREE",
+    "category": ["Culture, Arts & Heritage"],
+    "description": "A citywide showcase featuring visual artists, creative installations, and art workshops throughout Kuching."
+  },
+  {
+    "id": 7,
+    "name": "Celebrating Malaysia Through the Lens",
+    "date": "1 Oct - 31 Oct 2025",
+    "location": "Tegas Digital Village",
+    "organiser": "WAK Festival",
+    "price": "FREE",
+    "category": ["Culture, Arts & Heritage", "Business & Education"],
+    "description": "A photography exhibition highlighting Malaysia’s landscapes, people, and stories through artistic perspectives."
+  },
+  {
+    "id": 8,
+    "name": "Wild About Nature – Closer to Nature",
+    "date": "Ongoing throughout October 2025",
+    "location": "Sama Jaya Forest Park",
+    "organiser": "WAK Festival x Nature Society",
+    "price": "FREE",
+    "category": ["Wellness & Nature", "Culture, Arts & Heritage"],
+    "description": "A nature appreciation series including guided walks, talks, and eco-education activities in Sarawak’s urban green spaces."
+  },
+  {
+    "id": 9,
+    "name": "MATTA Malaysia Pickleball Grand Slam 2025 (MPG2025)",
+    "date": "13 Oct - 20 Oct 2025",
+    "location": "Pikabol Kuching",
+    "organiser": "Malaysia Pickleball Association",
+    "price": "Spectator entry FREE",
+    "category": ["Sports & Outdoor"],
+    "description": "A national-level pickleball championship bringing together athletes from across Malaysia for competitive matches."
+  },
+  {
+    "id": 10,
+    "name": "Pink it Up! Market Place",
+    "date": "10 Oct - 12 Oct, 17 Oct - 19 Oct, 24 Oct - 26 Oct 2025",
+    "location": "2nd Floor, tHe Spring Shopping Mall",
+    "organiser": "The Spring Management Services Sdn Bhd & WAK Festival",
+    "price": "FREE",
+    "category": ["Food & Markets", "Wellness & Nature"],
+    "description": "A 3-weekend bazaar celebrating Breast Cancer Awareness Month, featuring local artisans, fashion, and wellness brands."
+  },
+  {
+    "id": 11,
+    "name": "Explore, Experience and Energize with LaVie!",
+    "date": "5 Oct, 12 Oct, 19 Oct, 26 Oct 2025",
+    "location": "LaVie Wellness Sanctuary",
+    "organiser": "LaVie Wellness Sanctuary by Dr. Lowell Chai",
+    "price": "RM39 per pax (inclusive of lunch & mini workshops)",
+    "category": ["Wellness & Nature"],
+    "description": "A 4-week wellness journey exploring nutrition, hormones, breathing, and holistic health to foster mind-body balance."
+  },
+  {
+    "id": 12,
+    "name": "WAK X Texhouse Artspace",
+    "date": "1 Oct - 20 Oct 2025",
+    "location": "Texhouse Artspace",
+    "organiser": "WAK Festival",
+    "price": "FREE",
+    "category": ["Culture, Arts & Heritage"],
+    "description": "A collaboration exhibit showcasing textile-based art and cultural designs inspired by Sarawak’s fabric traditions."
+  },
+  {
+    "id": 13,
+    "name": "The Unforgettable 1945: A Forest Timewalk for Peace",
+    "date": "18 Oct - 20 Oct 2025",
+    "location": "Sama Jaya Forest Park",
+    "organiser": "WAK Festival",
+    "price": "FREE",
+    "category": ["Culture, Arts & Heritage", "Wellness & Nature"],
+    "description": "A guided storytelling walk through nature commemorating the legacy of peace and resilience post-World War II."
+  },
+  {
+    "id": 14,
+    "name": "Engkudu, Akar Penawar Landak and Natural Indigo Dye Workshop",
+    "date": "18 Oct - 19 Oct 2025",
+    "location": "1st Floor, tHe Spring Shopping Mall",
+    "organiser": "WAK Festival",
+    "price": "RM20 (inclusive of materials)",
+    "category": ["Culture, Arts & Heritage", "Business & Education"],
+    "description": "A hands-on fabric dyeing workshop using natural plant-based dyes guided by local artisans Ejah Jepon & Injan Lekong."
+  },
+  {
+    "id": 15,
+    "name": "Tapestry: Harmonising Peranakan Cultures",
+    "date": "18 Oct 2025",
+    "location": "Telang Usan Hotel",
+    "organiser": "WAK Festival x Tapestry",
+    "price": "RM35",
+    "category": ["Culture, Arts & Heritage", "Festivals & Entertainment"],
+    "description": "An intercultural music workshop exploring the rhythms and melodies of Peranakan traditions through collaborative performance."
+  },
+  {
+    "id": 16,
+    "name": "An Evening with Baba G.T. Lye",
+    "date": "19 Oct 2025",
+    "location": "Old Courthouse",
+    "organiser": "WAK Festival x Tapestry",
+    "price": "RM45 (inclusive of Makan Kecil)",
+    "category": ["Culture, Arts & Heritage", "Festivals & Entertainment"],
+    "description": "A special theatre evening with the iconic Baba G.T. Lye sharing stories and performances from decades in Peranakan arts."
+  },
+  {
+    "id": 17,
+    "name": "All About Arts Exhibition",
+    "date": "1 Oct - 31 Oct 2025",
+    "location": "Old Courthouse Galleries",
+    "organiser": "WAK Festival",
+    "price": "FREE",
+    "category": ["Culture, Arts & Heritage"],
+    "description": "A month-long curated exhibition showcasing multidisciplinary artworks from emerging and established Sarawakian artists."
+  }
+]
