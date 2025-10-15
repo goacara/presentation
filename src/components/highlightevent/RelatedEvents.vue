@@ -181,6 +181,16 @@ watch(
     }
   },
 )
+
+// Watch for currentEventId changes to reload related events when navigating between events
+watch(
+  () => props.currentEventId,
+  (newEventId) => {
+    if (newEventId && props.category) {
+      fetchRelatedEvents()
+    }
+  },
+)
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup>
-import { reactive, computed, onMounted } from 'vue'
+import { reactive, computed, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
@@ -25,11 +25,31 @@ const eventDetails = reactive({
   hasData: false,
 })
 
+// Image loading state
+const imageLoading = reactive({
+  heroImage: true,
+  heroImageError: false,
+})
+
+// Image loading handlers
+function onHeroImageLoad() {
+  imageLoading.heroImage = false
+  imageLoading.heroImageError = false
+}
+
+function onHeroImageError() {
+  imageLoading.heroImage = false
+  imageLoading.heroImageError = true
+}
+
 // Functions
 async function fetchEventDetails() {
   try {
     eventDetails.isLoading = true
     eventDetails.error = null
+    // Reset image loading state
+    imageLoading.heroImage = true
+    imageLoading.heroImageError = false
 
     // API call to get event details by ID
     const eventId = route.params.id
@@ -57,8 +77,8 @@ async function fetchEventDetails() {
       {
         id: 1,
         title: 'Interlinked',
-        description: 'An innovative exhibition exploring the connections between art, technology, and human experience.',
-        fullDescription: 'Interlinked is a groundbreaking exhibition that delves into the intricate relationships between art, technology, and human experience. This immersive showcase features interactive installations, digital art pieces, and thought-provoking displays that challenge visitors to reconsider their understanding of connectivity in the modern world. Through a carefully curated selection of works by local and international artists, the exhibition explores themes of communication, interdependence, and the evolving nature of human relationships in our increasingly digital society.',
+        description: 'A month-long program exploring material transformation and relational art through exhibitions, talks, and performances.',
+        fullDescription: 'Interlinked is a month-long exploration of material transformation and relational art, created through exhibitions, talks, and performances in collaboration with UNIMAS and international partners. This program highlights the intersection of creativity, innovation, and human connection in artistic expression.',
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Think & Tink',
@@ -71,8 +91,8 @@ async function fetchEventDetails() {
       {
         id: 2,
         title: 'Songket Weaving Workshop and Crafts Gallery',
-        description: 'Learn the traditional art of songket weaving and explore indigenous crafts.',
-        fullDescription: 'Immerse yourself in the rich cultural heritage of Sarawak through this comprehensive songket weaving workshop and crafts gallery. Participants will learn the intricate techniques of traditional songket weaving from master craftspeople, understanding the cultural significance and historical importance of this beautiful art form. The accompanying gallery showcases a stunning collection of indigenous crafts, highlighting the diversity and skill of Sarawak\'s artisan communities.',
+        description: 'A studio and gallery dedicated to preserving Sarawak’s songket weaving heritage with live demonstrations and handmade textiles.',
+        fullDescription: 'Immerse yourself in Sarawak’s traditional weaving culture through the Songket Weaving Workshop and Crafts Gallery. Learn from master weavers, observe live demonstrations, and explore an extensive collection of handwoven textiles that represent centuries of cultural artistry.',
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Tanoti House',
@@ -85,8 +105,8 @@ async function fetchEventDetails() {
       {
         id: 3,
         title: 'Project Craft Connections: Sarawak Indigenous Craft Anthology',
-        description: 'A comprehensive showcase of Sarawak\'s rich indigenous craft traditions.',
-        fullDescription: 'Project Craft Connections presents an extensive anthology of Sarawak\'s indigenous craft traditions, celebrating the remarkable diversity and artistry of the region\'s cultural heritage. This comprehensive showcase features traditional crafts from various ethnic communities, including intricate beadwork, wood carvings, textiles, and ceremonial objects. Visitors will gain deep insights into the cultural significance, techniques, and stories behind each craft, fostering appreciation and understanding of Sarawak\'s rich indigenous heritage.',
+        description: 'A collection showcasing indigenous Sarawak crafts that connect tradition, culture, and sustainability.',
+        fullDescription: 'Project Craft Connections highlights the craftsmanship of Sarawak’s indigenous artisans, blending tradition with modern sustainability. The exhibition showcases intricate handmade works that reflect deep cultural heritage and innovative preservation.',
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Tanoti House',
@@ -95,6 +115,202 @@ async function fetchEventDetails() {
         organizer: 'Tanoti Sdn Bhd',
         price: 'FREE',
         images: ['/3.png']
+      },
+      {
+        id: 4,
+        title: 'WAK Food Adventure Trail 2.0',
+        description: 'A culinary exploration of Kuching’s food scene featuring signature local dishes and hidden gems.',
+        fullDescription: 'Join the WAK Food Adventure Trail 2.0 and experience Kuching’s vibrant culinary scene. Explore local eateries, uncover hidden gems, and savor dishes that define Sarawak’s diverse food culture.',
+        date: '1 Oct - 31 Oct 2025',
+        time: 'All Day',
+        location: 'Various eateries across Kuching',
+        image: '/4.png',
+        category: 'Food & Markets',
+        organizer: 'WAK Festival',
+        price: 'Variable (by location)',
+        images: ['/4.png']
+      },
+      {
+        id: 5,
+        title: 'WAK Stinky Toe Trail',
+        description: 'An interactive trail celebrating Kuching’s art, culture, and street heritage.',
+        fullDescription: 'The WAK Stinky Toe Trail invites you to explore Kuching’s vibrant cultural heritage through an interactive city trail that combines art, storytelling, and community spaces.',
+        date: '1 Oct - 31 Oct 2025',
+        time: 'All Day',
+        location: 'Kuching City',
+        image: '/5.png',
+        category: 'Culture, Arts & Heritage',
+        organizer: 'WAK Festival',
+        price: 'FREE',
+        images: ['/5.png']
+      },
+      {
+        id: 6,
+        title: 'All About Arts',
+        description: 'A citywide showcase featuring visual artists, creative installations, and art workshops throughout Kuching.',
+        fullDescription: 'All About Arts transforms Kuching into a citywide gallery, celebrating creativity through visual arts, installations, and workshops that bring together artists and art lovers alike.',
+        date: '1 Oct - 31 Oct 2025',
+        time: 'All Day',
+        location: 'Various art venues',
+        image: '/6.png',
+        category: 'Culture, Arts & Heritage',
+        organizer: 'WAK Festival',
+        price: 'FREE',
+        images: ['/6.png']
+      },
+      {
+        id: 7,
+        title: 'Celebrating Malaysia Through the Lens',
+        description: 'A photography exhibition highlighting Malaysia’s landscapes, people, and stories through artistic perspectives.',
+        fullDescription: 'Celebrating Malaysia Through the Lens showcases stunning photography that captures the nation’s landscapes, people, and stories, offering artistic reflections on culture and identity.',
+        date: '1 Oct - 31 Oct 2025',
+        time: 'All Day',
+        location: 'Tegas Digital Village',
+        image: '/7.png',
+        category: 'Culture, Arts & Heritage',
+        organizer: 'WAK Festival',
+        price: 'FREE',
+        images: ['/7.png']
+      },
+      {
+        id: 8,
+        title: 'Wild About Nature – Closer to Nature',
+        description: 'A nature appreciation series including guided walks, talks, and eco-education activities.',
+        fullDescription: 'Wild About Nature – Closer to Nature offers guided walks, engaging talks, and environmental education activities designed to deepen appreciation for Sarawak’s rich biodiversity and urban green spaces.',
+        date: 'Ongoing throughout October 2025',
+        time: 'All Day',
+        location: 'Sama Jaya Forest Park',
+        image: '/8.png',
+        category: 'Wellness & Nature',
+        organizer: 'WAK Festival x Nature Society',
+        price: 'FREE',
+        images: ['/8.png']
+      },
+      {
+        id: 9,
+        title: 'MATTA Malaysia Pickleball Grand Slam 2025 (MPG2025)',
+        description: 'A national-level pickleball championship bringing together athletes from across Malaysia.',
+        fullDescription: 'The MATTA Malaysia Pickleball Grand Slam 2025 (MPG2025) gathers top athletes nationwide for an exciting week of competitive matches, community spirit, and sporting excellence.',
+        date: '13 Oct - 20 Oct 2025',
+        time: 'All Day',
+        location: 'Pikabol Kuching',
+        image: '/9.png',
+        category: 'Sports & Outdoor',
+        organizer: 'Malaysia Pickleball Association',
+        price: 'Spectator entry FREE',
+        images: ['/9.png']
+      },
+      {
+        id: 10,
+        title: 'Pink it Up! Market Place',
+        description: 'A bazaar celebrating Breast Cancer Awareness Month, featuring local artisans, fashion, and wellness brands.',
+        fullDescription: 'Pink it Up! Market Place is a vibrant bazaar held over three weekends to promote Breast Cancer Awareness Month. Visitors can shop from local artisans, fashion designers, and wellness brands supporting a great cause.',
+        date: '10 Oct - 12 Oct, 17 Oct - 19 Oct, 24 Oct - 26 Oct 2025',
+        time: 'All Day',
+        location: '2nd Floor, tHe Spring Shopping Mall',
+        image: '/10.png',
+        category: 'Food & Markets',
+        organizer: 'The Spring Management Services Sdn Bhd & WAK Festival',
+        price: 'FREE',
+        images: ['/10.png']
+      },
+      {
+        id: 11,
+        title: 'Explore, Experience and Energize with LaVie!',
+        description: 'A 4-week wellness journey exploring nutrition, hormones, breathing, and holistic health.',
+        fullDescription: 'Join LaVie Wellness Sanctuary for a month-long program of mini workshops focused on nutrition, hormones, breathwork, and holistic living for improved health and balance.',
+        date: '5 Oct, 12 Oct, 19 Oct, 26 Oct 2025',
+        time: 'All Day',
+        location: 'LaVie Wellness Sanctuary',
+        image: '/11.png',
+        category: 'Wellness & Nature',
+        organizer: 'LaVie Wellness Sanctuary by Dr. Lowell Chai',
+        price: 'RM39 per pax (inclusive of lunch & mini workshops)',
+        images: ['/11.png']
+      },
+      {
+        id: 12,
+        title: 'WAK X Texhouse Artspace',
+        description: 'A collaboration exhibit showcasing textile-based art and cultural designs inspired by Sarawak’s fabric traditions.',
+        fullDescription: 'WAK X Texhouse Artspace features textile-based artworks inspired by Sarawak’s traditional fabrics, blending cultural craftsmanship with modern creative interpretation.',
+        date: '1 Oct - 20 Oct 2025',
+        time: 'All Day',
+        location: 'Texhouse Artspace',
+        image: '/12.png',
+        category: 'Culture, Arts & Heritage',
+        organizer: 'WAK Festival',
+        price: 'FREE',
+        images: ['/12.png']
+      },
+      {
+        id: 13,
+        title: 'The Unforgettable 1945: A Forest Timewalk for Peace',
+        description: 'A guided storytelling walk through nature commemorating the legacy of peace and resilience post-World War II.',
+        fullDescription: 'The Unforgettable 1945: A Forest Timewalk for Peace combines history and nature through guided storytelling walks honoring post-war resilience and peacebuilding.',
+        date: '18 Oct - 20 Oct 2025',
+        time: 'All Day',
+        location: 'Sama Jaya Forest Park',
+        image: '/13.png',
+        category: 'Culture, Arts & Heritage',
+        organizer: 'WAK Festival',
+        price: 'FREE',
+        images: ['/13.png']
+      },
+      {
+        id: 14,
+        title: 'Engkudu, Akar Penawar Landak and Natural Indigo Dye Workshop',
+        description: 'A hands-on fabric dyeing workshop using natural plant-based dyes guided by local artisans.',
+        fullDescription: 'This workshop introduces participants to natural fabric dyeing techniques using Engkudu, Akar Penawar Landak, and indigo plants, guided by renowned local artisans Ejah Jepon and Injan Lekong.',
+        date: '18 Oct - 19 Oct 2025',
+        time: 'All Day',
+        location: '1st Floor, tHe Spring Shopping Mall',
+        image: '/14.png',
+        category: 'Culture, Arts & Heritage',
+        organizer: 'WAK Festival',
+        price: 'RM20 (inclusive of materials)',
+        images: ['/14.png']
+      },
+      {
+        id: 15,
+        title: 'Tapestry: Harmonising Peranakan Cultures',
+        description: 'An intercultural music workshop exploring the rhythms and melodies of Peranakan traditions.',
+        fullDescription: 'Tapestry: Harmonising Peranakan Cultures is an intercultural music workshop that explores the rhythms, melodies, and performance traditions of Peranakan culture through collaborative art.',
+        date: '18 Oct 2025',
+        time: 'All Day',
+        location: 'Telang Usan Hotel',
+        image: '/15.png',
+        category: 'Culture, Arts & Heritage',
+        organizer: 'WAK Festival x Tapestry',
+        price: 'RM35',
+        images: ['/15.png']
+      },
+      {
+        id: 16,
+        title: 'An Evening with Baba G.T. Lye',
+        description: 'A special theatre evening with the iconic Baba G.T. Lye sharing stories and performances from decades in Peranakan arts.',
+        fullDescription: 'An Evening with Baba G.T. Lye presents a memorable night of storytelling, performance, and reflection by the iconic figure of Peranakan arts, celebrating his lifelong contribution to culture.',
+        date: '19 Oct 2025',
+        time: 'Evening',
+        location: 'Old Courthouse',
+        image: '/16.png',
+        category: 'Culture, Arts & Heritage',
+        organizer: 'WAK Festival x Tapestry',
+        price: 'RM45 (inclusive of Makan Kecil)',
+        images: ['/16.png']
+      },
+      {
+        id: 17,
+        title: 'All About Arts Exhibition',
+        description: 'A curated exhibition showcasing multidisciplinary artworks from Sarawakian artists.',
+        fullDescription: 'All About Arts Exhibition brings together multidisciplinary works by emerging and established Sarawakian artists in a month-long celebration of creativity and cultural expression.',
+        date: '1 Oct - 31 Oct 2025',
+        time: 'All Day',
+        location: 'Old Courthouse Galleries',
+        image: '/17.png',
+        category: 'Culture, Arts & Heritage',
+        organizer: 'WAK Festival',
+        price: 'FREE',
+        images: ['/17.png']
       }
     ]
     
@@ -127,6 +343,16 @@ const sidebarDetails = computed(() => {
 onMounted(() => {
   fetchEventDetails()
 })
+
+// Watch for route changes to refetch event details when navigating between events
+watch(
+  () => route.params.id,
+  (newId) => {
+    if (newId) {
+      fetchEventDetails()
+    }
+  },
+)
 </script>
 
 <template>
@@ -147,7 +373,29 @@ onMounted(() => {
     <div v-if="eventDetails.hasData && !eventDetails.isLoading" class="event-content">
       <!-- Hero Image -->
       <div class="event-hero">
-        <img :src="eventDetails.event.image" :alt="eventDetails.event.title" class="hero-image" />
+        <!-- Image loading state -->
+        <div v-if="imageLoading.heroImage" class="hero-image-loading">
+          <div class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading image...</span>
+          </div>
+        </div>
+        
+        <!-- Hero image with error handling -->
+        <img 
+          v-show="!imageLoading.heroImage && !imageLoading.heroImageError"
+          :src="eventDetails.event.image" 
+          :alt="eventDetails.event.title" 
+          class="hero-image"
+          @load="onHeroImageLoad"
+          @error="onHeroImageError"
+        />
+        
+        <!-- Fallback image on error -->
+        <div v-if="imageLoading.heroImageError" class="hero-image-fallback">
+          <i class="fas fa-image fa-3x text-muted"></i>
+          <p class="text-muted mt-2">Image not available</p>
+        </div>
+        
         <div class="hero-overlay">
           <div class="hero-content">
             <h1 class="event-title">{{ eventDetails.event.title }}</h1>
@@ -238,6 +486,26 @@ onMounted(() => {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero-image-loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.hero-image-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  color: #6c757d;
 }
 
 .hero-overlay {
