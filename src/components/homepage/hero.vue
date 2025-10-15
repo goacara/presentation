@@ -17,7 +17,7 @@
   position: relative;
   height: 70vh;
   min-height: 500px;
-  background-image: url('events/wak.png');
+  background-image: url('/wak.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
