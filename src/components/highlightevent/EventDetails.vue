@@ -62,11 +62,11 @@ async function fetchEventDetails() {
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Think & Tink',
-        image: '/events/1.png',
+        image: '/1.png',
         category: 'Culture, Arts & Heritage',
         organizer: 'Think & Tink',
         price: 'FREE',
-        images: ['/events/1.png']
+        images: ['/1.png']
       },
       {
         id: 2,
@@ -76,11 +76,11 @@ async function fetchEventDetails() {
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Tanoti House',
-        image: '/events/2.png',
+        image: '/2.png',
         category: 'Culture, Arts & Heritage',
         organizer: 'Tanoti Sdn Bhd',
         price: 'FREE',
-        images: ['/events/2.png']
+        images: ['/2.png']
       },
       {
         id: 3,
@@ -90,11 +90,11 @@ async function fetchEventDetails() {
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Tanoti House',
-        image: '/events/3.png',
+        image: '/3.png',
         category: 'Culture, Arts & Heritage',
         organizer: 'Tanoti Sdn Bhd',
         price: 'FREE',
-        images: ['/events/3.png']
+        images: ['/3.png']
       }
     ]
     

@@ -12,7 +12,7 @@ const featureEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Think & Tink',
-      image: '/events/1.png',
+      image: '/1.png',
       category: ['Culture, Arts & Heritage', 'Business & Education'],
       organiser: 'Think & Tink',
       price: 'FREE'
@@ -23,7 +23,7 @@ const featureEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Tanoti House',
-      image: '/events/2.png',
+      image: '/2.png',
       category: ['Culture, Arts & Heritage'],
       organiser: 'Tanoti Sdn Bhd',
       price: 'FREE'
@@ -34,7 +34,7 @@ const featureEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Tanoti House',
-      image: '/events/3.png',
+      image: '/3.png',
       category: ['Culture, Arts & Heritage'],
       organiser: 'Tanoti Sdn Bhd',
       price: 'FREE'
@@ -45,7 +45,7 @@ const featureEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Various eateries across Kuching',
-      image: '/events/4.png',
+      image: '/4.png',
       category: ['Food & Markets', 'Festivals & Entertainment'],
       organiser: 'WAK Festival',
       price: 'Variable (by location)'
@@ -56,7 +56,7 @@ const featureEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Kuching City',
-      image: '/events/5.png',
+      image: '/5.png',
       category: ['Culture, Arts & Heritage', 'Festivals & Entertainment'],
       organiser: 'WAK Festival',
       price: 'FREE'
@@ -67,7 +67,7 @@ const featureEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Various art venues',
-      image: '/events/6.png',
+      image: '/6.png',
       category: ['Culture, Arts & Heritage'],
       organiser: 'WAK Festival',
       price: 'FREE'

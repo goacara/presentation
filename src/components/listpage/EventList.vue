@@ -22,7 +22,7 @@ const events = ref([
     title: 'Interlinked',
     date: '1 Oct - 31 Oct 2025',
     tagline: 'An innovative exhibition exploring the connections between art, technology, and human experience.',
-    image: '/events/1.png',
+    image: '/1.png',
     category: 'Culture, Arts & Heritage'
   },
   {
@@ -30,7 +30,7 @@ const events = ref([
     title: 'Songket Weaving Workshop and Crafts Gallery',
     date: '1 Oct - 31 Oct 2025',
     tagline: 'Learn the traditional art of songket weaving and explore indigenous crafts.',
-    image: '/events/2.png',
+    image: '/2.png',
     category: 'Culture, Arts & Heritage'
   },
   {
@@ -38,7 +38,7 @@ const events = ref([
     title: 'Project Craft Connections: Sarawak Indigenous Craft Anthology',
     date: '1 Oct - 31 Oct 2025',
     tagline: 'A comprehensive showcase of Sarawak\'s rich indigenous craft traditions.',
-    image: '/events/3.png',
+    image: '/3.png',
     category: 'Culture, Arts & Heritage'
   },
   {
@@ -46,7 +46,7 @@ const events = ref([
     title: 'WAK Food Adventure Trail 2.0',
     date: '1 Oct - 31 Oct 2025',
     tagline: 'Discover Kuching\'s culinary delights through this exciting food trail adventure.',
-    image: '/events/4.png',
+    image: '/4.png',
     category: 'Food & Markets'
   },
   {
@@ -54,7 +54,7 @@ const events = ref([
     title: 'WAK Stinky Toe Trail',
     date: '1 Oct - 31 Oct 2025',
     tagline: 'A unique cultural trail exploring Kuching\'s heritage and local stories.',
-    image: '/events/5.png',
+    image: '/5.png',
     category: 'Culture, Arts & Heritage'
   },
   {
@@ -62,7 +62,7 @@ const events = ref([
     title: 'All About Arts',
     date: '1 Oct - 31 Oct 2025',
     tagline: 'Immerse yourself in various art forms and creative expressions.',
-    image: '/events/6.png',
+    image: '/6.png',
     category: 'Culture, Arts & Heritage'
   },
   {
@@ -70,7 +70,7 @@ const events = ref([
     title: 'Celebrating Malaysia Through the Lens',
     date: '1 Oct - 31 Oct 2025',
     tagline: 'A photography exhibition celebrating Malaysia\'s diversity and beauty.',
-    image: '/events/7.png',
+    image: '/7.png',
     category: 'Culture, Arts & Heritage'
   },
   {
@@ -78,7 +78,7 @@ const events = ref([
     title: 'Wild About Nature – Closer to Nature',
     date: 'Ongoing throughout October 2025',
     tagline: 'Connect with nature through guided walks and environmental activities.',
-    image: '/events/8.png',
+    image: '/8.png',
     category: 'Wellness & Nature'
   },
   {
@@ -86,7 +86,7 @@ const events = ref([
     title: 'MATTA Malaysia Pickleball Grand Slam 2025 (MPG2025)',
     date: '13 Oct - 20 Oct 2025',
     tagline: 'Malaysia\'s premier pickleball tournament featuring top players from around the region.',
-    image: '/events/9.png',
+    image: '/9.png',
     category: 'Sports & Outdoor'
   },
   {
@@ -94,7 +94,7 @@ const events = ref([
     title: 'Pink it Up! Market Place',
     date: '10 Oct - 12 Oct, 17 Oct - 19 Oct, 24 Oct - 26 Oct 2025',
     tagline: 'A vibrant marketplace featuring local vendors, wellness products, and community activities.',
-    image: '/events/10.png',
+    image: '/10.png',
     category: 'Food & Markets'
   },
   {
@@ -102,7 +102,7 @@ const events = ref([
     title: 'Explore, Experience and Energize with LaVie!',
     date: '5 Oct, 12 Oct, 19 Oct, 26 Oct 2025',
     tagline: 'Wellness workshops and activities designed to rejuvenate mind, body, and spirit.',
-    image: '/events/11.png',
+    image: '/11.png',
     category: 'Wellness & Nature'
   },
   {
@@ -110,7 +110,7 @@ const events = ref([
     title: 'WAK X Texhouse Artspace',
     date: '1 Oct - 20 Oct 2025',
     tagline: 'Contemporary art exhibitions and creative workshops in a unique artspace setting.',
-    image: '/events/12.png',
+    image: '/12.png',
     category: 'Culture, Arts & Heritage'
   }
 ])

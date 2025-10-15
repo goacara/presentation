@@ -28,7 +28,7 @@ const monthlyEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Think & Tink',
-      image: '/events/1.png',
+      image: '/1.png',
       category: ['Culture, Arts & Heritage', 'Business & Education'],
       organiser: 'Think & Tink',
       price: 'FREE'
@@ -39,7 +39,7 @@ const monthlyEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Tanoti House',
-      image: '/events/2.png',
+      image: '/2.png',
       category: ['Culture, Arts & Heritage'],
       organiser: 'Tanoti Sdn Bhd',
       price: 'FREE'
@@ -50,7 +50,7 @@ const monthlyEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Tanoti House',
-      image: '/events/3.png',
+      image: '/3.png',
       category: ['Culture, Arts & Heritage'],
       organiser: 'Tanoti Sdn Bhd',
       price: 'FREE'
@@ -61,7 +61,7 @@ const monthlyEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Various eateries across Kuching',
-      image: '/events/4.png',
+      image: '/4.png',
       category: ['Food & Markets', 'Festivals & Entertainment'],
       organiser: 'WAK Festival',
       price: 'Variable (by location)'
@@ -72,7 +72,7 @@ const monthlyEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Kuching City',
-      image: '/events/5.png',
+      image: '/5.png',
       category: ['Culture, Arts & Heritage', 'Festivals & Entertainment'],
       organiser: 'WAK Festival',
       price: 'FREE'
@@ -83,7 +83,7 @@ const monthlyEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Various art venues',
-      image: '/events/6.png',
+      image: '/6.png',
       category: ['Culture, Arts & Heritage'],
       organiser: 'WAK Festival',
       price: 'FREE'
@@ -94,7 +94,7 @@ const monthlyEvents = reactive({
       date: '1 Oct - 31 Oct 2025',
       time: 'All Day',
       location: 'Tegas Digital Village',
-      image: '/events/7.png',
+      image: '/7.png',
       category: ['Culture, Arts & Heritage', 'Business & Education'],
       organiser: 'WAK Festival',
       price: 'FREE'
@@ -105,7 +105,7 @@ const monthlyEvents = reactive({
       date: 'Ongoing throughout October 2025',
       time: 'All Day',
       location: 'Sama Jaya Forest Park',
-      image: '/events/8.png',
+      image: '/8.png',
       category: ['Wellness & Nature', 'Culture, Arts & Heritage'],
       organiser: 'WAK Festival x Nature Society',
       price: 'FREE'
@@ -116,7 +116,7 @@ const monthlyEvents = reactive({
       date: '13 Oct - 20 Oct 2025',
       time: 'All Day',
       location: 'Pikabol Kuching',
-      image: '/events/9.png',
+      image: '/9.png',
       category: ['Sports & Outdoor'],
       organiser: 'Malaysia Pickleball Association',
       price: 'Spectator entry FREE'
@@ -127,7 +127,7 @@ const monthlyEvents = reactive({
       date: '10 Oct - 12 Oct, 17 Oct - 19 Oct, 24 Oct - 26 Oct 2025',
       time: 'All Day',
       location: '2nd Floor, tHe Spring Shopping Mall',
-      image: '/events/10.png',
+      image: '/10.png',
       category: ['Food & Markets', 'Wellness & Nature'],
       organiser: 'The Spring Management Services Sdn Bhd & WAK Festival',
       price: 'FREE'
@@ -138,7 +138,7 @@ const monthlyEvents = reactive({
       date: '5 Oct, 12 Oct, 19 Oct, 26 Oct 2025',
       time: 'All Day',
       location: 'LaVie Wellness Sanctuary',
-      image: '/events/11.png',
+      image: '/11.png',
       category: ['Wellness & Nature'],
       organiser: 'LaVie Wellness Sanctuary by Dr. Lowell Chai',
       price: 'RM39 per pax (inclusive of lunch & mini workshops)'
@@ -149,7 +149,7 @@ const monthlyEvents = reactive({
       date: '1 Oct - 20 Oct 2025',
       time: 'All Day',
       location: 'Texhouse Artspace',
-      image: '/events/12.png',
+      image: '/12.png',
       category: ['Culture, Arts & Heritage'],
       organiser: 'WAK Festival',
       price: 'FREE'

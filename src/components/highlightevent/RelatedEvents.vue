@@ -1,8 +1,9 @@
 <script setup>
 import { reactive, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 
 const route = useRoute()
+const router = useRouter()
 
 // Props to receive current event category
 const props = defineProps({
@@ -57,7 +58,7 @@ async function fetchRelatedEvents() {
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Think & Tink',
-        image: '/events/1.png',
+        image: '/1.png',
         category: ['Culture, Arts & Heritage', 'Business & Education'],
         organiser: 'Think & Tink',
         price: 'FREE'
@@ -69,7 +70,7 @@ async function fetchRelatedEvents() {
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Tanoti House',
-        image: '/events/2.png',
+        image: '/2.png',
         category: ['Culture, Arts & Heritage'],
         organiser: 'Tanoti Sdn Bhd',
         price: 'FREE'
@@ -81,7 +82,7 @@ async function fetchRelatedEvents() {
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Tanoti House',
-        image: '/events/3.png',
+        image: '/3.png',
         category: ['Culture, Arts & Heritage'],
         organiser: 'Tanoti Sdn Bhd',
         price: 'FREE'
@@ -93,7 +94,7 @@ async function fetchRelatedEvents() {
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Various eateries across Kuching',
-        image: '/events/4.png',
+        image: '/4.png',
         category: ['Food & Markets', 'Festivals & Entertainment'],
         organiser: 'WAK Festival',
         price: 'Variable (by location)'
@@ -105,7 +106,7 @@ async function fetchRelatedEvents() {
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Kuching City',
-        image: '/events/5.png',
+        image: '/5.png',
         category: ['Culture, Arts & Heritage', 'Festivals & Entertainment'],
         organiser: 'WAK Festival',
         price: 'FREE'
@@ -117,7 +118,7 @@ async function fetchRelatedEvents() {
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Various art venues',
-        image: '/events/6.png',
+        image: '/6.png',
         category: ['Culture, Arts & Heritage'],
         organiser: 'WAK Festival',
         price: 'FREE'
@@ -129,7 +130,7 @@ async function fetchRelatedEvents() {
         date: '1 Oct - 31 Oct 2025',
         time: 'All Day',
         location: 'Tegas Digital Village',
-        image: '/events/7.png',
+        image: '/7.png',
         category: ['Culture, Arts & Heritage', 'Business & Education'],
         organiser: 'WAK Festival',
         price: 'FREE'
@@ -141,7 +142,7 @@ async function fetchRelatedEvents() {
         date: 'Ongoing throughout October 2025',
         time: 'All Day',
         location: 'Sama Jaya Forest Park',
-        image: '/events/8.png',
+        image: '/8.png',
         category: ['Wellness & Nature', 'Culture, Arts & Heritage'],
         organiser: 'WAK Festival x Nature Society',
         price: 'FREE'
@@ -159,8 +160,8 @@ async function fetchRelatedEvents() {
 
 // Function to navigate to event details
 function goToEvent(eventId) {
-  // Navigate to the event details page
-  window.location.href = `/event/${eventId}`
+  // Navigate to the event details page using Vue Router
+  router.push(`/event/${eventId}`)
 }
 
 // Fetch related events when component mounts or when category changes
